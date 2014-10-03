@@ -66,7 +66,7 @@ static PROMapBlock PROSkipMapBlock = nil;
                 // Determine whether the property's type is a class that supports automatic mapping.
                 __block Class nestedMappableClass = Nil;
                 [PROClassNameRegularExpression enumerateMatchesInString:propertyType options:0 range:NSMakeRange(0, propertyType.length) usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop) {
-                    NSString *nestedClassName = [propertyType substringWithRange:result.range];
+                    NSString *nestedClassName = [propertyType substringWithRange:[result rangeAtIndex:1]];
                     Class nestedClass = NSClassFromString(nestedClassName);
                     if ([nestedClass conformsToProtocol:@protocol(PROMappableObject)]) nestedMappableClass = nestedClass;
                     *stop = YES;
