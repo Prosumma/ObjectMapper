@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F3A495FF19DE3404002B1F62 /* ObjectMapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = F3A495FE19DE3404002B1F62 /* ObjectMapper.h */; };
-		F3A4960119DE3404002B1F62 /* ObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A4960019DE3404002B1F62 /* ObjectMapper.m */; };
+		F3A4961A19DE4F3B002B1F62 /* PROSomething.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A4961919DE4F3B002B1F62 /* PROSomething.m */; };
+		F3A4961C19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A4961B19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m */; };
+		F3A4961F19DE57F6002B1F62 /* PROSomethingElse.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */; };
+		F3EF655019DE5B040057D8C2 /* PROObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */; };
+		F3EF655119DE5B040057D8C2 /* PROObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +21,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				F3A495FF19DE3404002B1F62 /* ObjectMapper.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,10 +28,15 @@
 
 /* Begin PBXFileReference section */
 		F3A495FB19DE3404002B1F62 /* libObjectMapper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libObjectMapper.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3A495FE19DE3404002B1F62 /* ObjectMapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectMapper.h; sourceTree = "<group>"; };
-		F3A4960019DE3404002B1F62 /* ObjectMapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectMapper.m; sourceTree = "<group>"; };
 		F3A4960619DE3404002B1F62 /* ObjectMapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectMapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A4960919DE3404002B1F62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3A4961819DE4F3B002B1F62 /* PROSomething.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROSomething.h; sourceTree = "<group>"; };
+		F3A4961919DE4F3B002B1F62 /* PROSomething.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROSomething.m; sourceTree = "<group>"; };
+		F3A4961B19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROObjectMapperDeserializationTests.m; sourceTree = "<group>"; };
+		F3A4961D19DE57F6002B1F62 /* PROSomethingElse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROSomethingElse.h; sourceTree = "<group>"; };
+		F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROSomethingElse.m; sourceTree = "<group>"; };
+		F3EF654E19DE5B040057D8C2 /* PROObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROObjectMapper.h; sourceTree = "<group>"; };
+		F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROObjectMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +78,8 @@
 		F3A495FD19DE3404002B1F62 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				F3A495FE19DE3404002B1F62 /* ObjectMapper.h */,
-				F3A4960019DE3404002B1F62 /* ObjectMapper.m */,
+				F3EF654E19DE5B040057D8C2 /* PROObjectMapper.h */,
+				F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */,
 			);
 			path = ObjectMapper;
 			sourceTree = "<group>";
@@ -81,6 +88,11 @@
 			isa = PBXGroup;
 			children = (
 				F3A4960819DE3404002B1F62 /* Supporting Files */,
+				F3A4961819DE4F3B002B1F62 /* PROSomething.h */,
+				F3A4961919DE4F3B002B1F62 /* PROSomething.m */,
+				F3A4961B19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m */,
+				F3A4961D19DE57F6002B1F62 /* PROSomethingElse.h */,
+				F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */,
 			);
 			path = ObjectMapperTests;
 			sourceTree = "<group>";
@@ -136,6 +148,7 @@
 		F3A495F319DE3404002B1F62 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = PRO;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Prosumma LLC";
 				TargetAttributes = {
@@ -180,7 +193,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3A4960119DE3404002B1F62 /* ObjectMapper.m in Sources */,
+				F3EF655019DE5B040057D8C2 /* PROObjectMapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3A4961F19DE57F6002B1F62 /* PROSomethingElse.m in Sources */,
+				F3EF655119DE5B040057D8C2 /* PROObjectMapper.m in Sources */,
+				F3A4961C19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m in Sources */,
+				F3A4961A19DE4F3B002B1F62 /* PROSomething.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +352,7 @@
 				F3A4960E19DE3404002B1F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F3A4960F19DE3404002B1F62 /* Build configuration list for PBXNativeTarget "ObjectMapperTests" */ = {
 			isa = XCConfigurationList;
@@ -343,6 +361,7 @@
 				F3A4961119DE3404002B1F62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
