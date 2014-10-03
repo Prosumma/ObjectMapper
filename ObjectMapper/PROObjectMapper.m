@@ -57,15 +57,6 @@ static PROMapBlock PROSkipMapBlock = nil;
             for (unsigned int p = 0; p < propertyCount; p++) {
                 // Get property attributes up front.
                 objc_property_t property = properties[p];
-                
-                unsigned int attributeCount = 0;
-                objc_property_attribute_t *attributes = property_copyAttributeList(property, &attributeCount);
-                for (unsigned int a = 0; a < attributeCount; a++) {
-                    objc_property_attribute_t attribute = attributes[a];
-                    NSLog(@"%s: %s", attribute.name, attribute.value);
-                }
-                free(attributes);
-                
                 // Name
                 NSString *propertyName = @(property_getName(property));
                 // Check whether this property is mappable, otherwise continue on.

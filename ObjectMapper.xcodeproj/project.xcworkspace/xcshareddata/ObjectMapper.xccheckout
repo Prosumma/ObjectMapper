@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>71B2FEAC-BB06-4AA1-B018-7213D500D615</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ObjectMapper</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>23F2AFF746B9C8F40000E80C76FF65563FB5599C</key>
+		<string>github:Prosumma/ObjectMapper</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ObjectMapper.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>23F2AFF746B9C8F40000E80C76FF65563FB5599C</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github:Prosumma/ObjectMapper</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>23F2AFF746B9C8F40000E80C76FF65563FB5599C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>23F2AFF746B9C8F40000E80C76FF65563FB5599C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ObjectMapper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
