@@ -47,14 +47,25 @@ static PROMapBlock PROSkipMapBlock = nil;
             // Set up our mapping dictionaries
             NSMutableDictionary *serializationMappings = [NSMutableDictionary new];
             NSMutableDictionary *deserializationMappings = [NSMutableDictionary new];
+            
             // Determine whether the mapped class offers custom mappings.
             BOOL customizable = [mappedClass conformsToProtocol:@protocol(PROMappableObject)];
+            
             // Loop through our properties.
             unsigned int propertyCount = 0;
             objc_property_t *properties = class_copyPropertyList(mappedClass, &propertyCount);
             for (unsigned int p = 0; p < propertyCount; p++) {
                 // Get property attributes up front.
                 objc_property_t property = properties[p];
+                
+                unsigned int attributeCount = 0;
+                objc_property_attribute_t *attributes = property_copyAttributeList(property, &attributeCount);
+                for (unsigned int a = 0; a < attributeCount; a++) {
+                    objc_property_attribute_t attribute = attributes[a];
+                    NSLog(@"%s: %s", attribute.name, attribute.value);
+                }
+                free(attributes);
+                
                 // Name
                 NSString *propertyName = @(property_getName(property));
                 // Check whether this property is mappable, otherwise continue on.
@@ -95,6 +106,8 @@ static PROMapBlock PROSkipMapBlock = nil;
                     };
                 }
                 if (!serializationMapBlock) serializationMapBlock = PRODefaultMapBlock;
+                
+                // Assignment
                 serializationMappings[propertyName] = [serializationMapBlock copy];
                 
                 // Create deserialization mappings.
@@ -123,9 +136,12 @@ static PROMapBlock PROSkipMapBlock = nil;
                         deserializationMapBlock = PROSkipMapBlock;
                     }
                 }
+                
+                // Assignment and cleanup
                 deserializationMappings[propertyName] = [deserializationMapBlock copy];
                 if (readonly) free(readonly);
             }
+            
             free(properties);
             result = @{ PROObjectMapperSerializationMappingsKey : serializationMappings, PROObjectMapperDeserializationMappingsKey : deserializationMappings };
             PROObjectMappings[mappedClassName] = result;

@@ -12,6 +12,7 @@
 		F3A4961F19DE57F6002B1F62 /* PROSomethingElse.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */; };
 		F3EF655019DE5B040057D8C2 /* PROObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */; };
 		F3EF655119DE5B040057D8C2 /* PROObjectMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */; };
+		F3EF655319DEE2470057D8C2 /* PROObjectMapperSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3EF655219DEE2470057D8C2 /* PROObjectMapperSerializationTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,7 @@
 		F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROSomethingElse.m; sourceTree = "<group>"; };
 		F3EF654E19DE5B040057D8C2 /* PROObjectMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PROObjectMapper.h; sourceTree = "<group>"; };
 		F3EF654F19DE5B040057D8C2 /* PROObjectMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROObjectMapper.m; sourceTree = "<group>"; };
+		F3EF655219DEE2470057D8C2 /* PROObjectMapperSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PROObjectMapperSerializationTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,12 +89,13 @@
 		F3A4960719DE3404002B1F62 /* ObjectMapperTests */ = {
 			isa = PBXGroup;
 			children = (
-				F3A4960819DE3404002B1F62 /* Supporting Files */,
+				F3A4961B19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m */,
+				F3EF655219DEE2470057D8C2 /* PROObjectMapperSerializationTests.m */,
 				F3A4961819DE4F3B002B1F62 /* PROSomething.h */,
 				F3A4961919DE4F3B002B1F62 /* PROSomething.m */,
-				F3A4961B19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m */,
 				F3A4961D19DE57F6002B1F62 /* PROSomethingElse.h */,
 				F3A4961E19DE57F6002B1F62 /* PROSomethingElse.m */,
+				F3A4960819DE3404002B1F62 /* Supporting Files */,
 			);
 			path = ObjectMapperTests;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				F3A4961F19DE57F6002B1F62 /* PROSomethingElse.m in Sources */,
 				F3EF655119DE5B040057D8C2 /* PROObjectMapper.m in Sources */,
 				F3A4961C19DE5610002B1F62 /* PROObjectMapperDeserializationTests.m in Sources */,
+				F3EF655319DEE2470057D8C2 /* PROObjectMapperSerializationTests.m in Sources */,
 				F3A4961A19DE4F3B002B1F62 /* PROSomething.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,5 +15,6 @@
 @property (nonatomic, readwrite, copy) NSString *simple;
 @property (nonatomic, readwrite, copy) NSString *overridden;
 @property (nonatomic, readwrite, assign) NSUInteger skipped;
+@property (nonatomic, readonly, assign) NSUInteger readonlyNumber;
 @property (nonatomic, readwrite, strong) PROSomethingElse *somethingElse;
 @end

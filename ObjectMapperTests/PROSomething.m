@@ -42,4 +42,13 @@
     return nil;
 }
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _readonlyNumber = 441;
+    }
+    return self;
+}
+
 @end
